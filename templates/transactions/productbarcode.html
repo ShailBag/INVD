@@ -9,18 +9,11 @@
           <thead>
             <tr>
               <th>Serial No</th>
-              <th>Product</th>
-              <th>Initial Quantity</th>
-              <th>Unit</th>
-            </tr>
+              </tr>
           </thead>
           <tbody>
-            <tr ng-repeat="stock in stockCtrl.stockList">
-              <td>{{ stock.stockEntryId }}</td>
-              <td>{{ stock.productName }}</td>
-              <td>{{ stock.quantity }}</td>
-              <td>{{ stock.unit }}</td>
-              <td><a href="#" >Generate Barcode</a> </td>
+            <tr ng-repeat="stock in stockCtrl.barcodeList">
+              <td>{{ stock }}</td>
             </tr>
           </tbody>
         </table> 

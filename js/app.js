@@ -54,7 +54,7 @@ var unitList = [{ "value": 1, "Name": "Number"},
 		{ "value": 3, "Name" : "Milliliter (ml)"}
 	];
 
-var productStock = [];
-var stockEntries = [];
+var productStock = [{"stockId":1,"productId":1,"productName":"Powder","quantity":"100","unit":"Weight (grams)"},{"stockId":3,"productId":2,"productName":"Bottle","quantity":35,"unit":"Number"}];
+var stockEntries = [{"stockEntryId":1,"productId":1,"productName":"Powder","quantity":"100","unit":"Weight (grams)"},{"stockEntryId":2,"productId":2,"productName":"Bottle","quantity":"15","unit":"Number"},{"stockEntryId":3,"productId":2,"productName":"Bottle","quantity":"20","unit":"Number"}];
 
 var barcodeSeries = [];
