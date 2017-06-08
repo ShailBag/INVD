@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" >
+<title>Demo :: Application</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" href="css/bootstrap.min.v1.css" media="screen">
+<link rel="stylesheet" href="css/custom.min.css">
+<style type="text/css">
+  @font-face{
+    font-family: "Barcode";
+    src : url('fonts/fre3of9x.ttf') format('truetype');
+
+  }
+
+  p.barcode {
+    font-family: "Barcode", Verdana, Tahoma;
+  }
+
+</style>
+
+</head>
+<body ng-app="sms" novalidate="novalidate">
+
+	<div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand">SMS</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          
+          <ul class="nav navbar-nav navbar-right">
+             <li>
+              <a href="#!/StockIssue">Stock Issue</a>
+            </li>
+            <li>
+              <a href="#!/StockEntry">Stock Entry</a>
+            </li>
+            <li>
+              <a href="#!/StockView">Stock View</a>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Admin <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="themes">
+                <li><a href="#!/Product">Product Master</a></li>
+                <li class="divider"></li>
+                <li><a href="#!/Unit">Product Unit</a></li>
+                <li><a href="#!/StockEntries">Product Barcode Generation</a></li>
+                <li><a href="#!/ActivityPoint">Activity Points</a></li>
+                <li><a href="#!/Report">Report</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+    	<div ng-view></div>
+    </div>
+   
+
+    <script src="scripts/jquery-1.10.2.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/custom.js"></script>
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-route.min.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript" src="js/master.product.js"></script>
+    <script type="text/javascript" src="js/stock.entry.js"></script>
+    <script type="text/javascript" src="js/stock.view.js"></script>
+    <script type="text/javascript" src="js/product.barcode.js"></script>  
+    <script type="text/javascript" src="js/stock.issue.js"></script>
+    <script type="text/javascript" src="js/stock.barcode.js"></script>
+    
+</body>
+</html>
